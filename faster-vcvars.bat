@@ -6,8 +6,8 @@ SET _target_build=
 IF [%1] == [32] SET _target_build=x86
 IF [%1] == [64] SET _target_build=x64
 IF [!_target_build!] == [] (
-		ECHO Target build must be either 32 or 64
-		EXIT /B
+		ECHO Error: Target build must be either 32 or 64
+		EXIT
 	)
 
 SET "_path_vs=C:\Program Files (x86)\Microsoft Visual Studio\"
