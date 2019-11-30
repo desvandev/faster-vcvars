@@ -5,6 +5,7 @@ Batch script to setup environmental variables for Visual Studio compiler without
 
 Usage:
 ```cmd
-cmd /K faster-vcvars.bat 64
+::Inside cmd.exe
+> faster-vcvars.bat 64
 ```
 Change 64 to 32 if you need to compile to x86
